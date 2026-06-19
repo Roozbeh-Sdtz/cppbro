@@ -40,8 +40,16 @@ MyProject/
 
 ### macOS
 
+With Homebrew:
+
 ```bash
 brew install Roozbeh-Sdtz/tap/cppbro
+```
+
+With Cargo:
+
+```bash
+cargo install cppbro
 ```
 
 ### Linux
@@ -57,8 +65,8 @@ cargo install cppbro
 ```
 
 `cppbro build` and `cppbro run` use CMake and Ninja. The Homebrew package
-installs those dependencies automatically; Linux and Windows users should have
-CMake, Ninja, and a C++ compiler installed for build/run commands.
+installs those dependencies automatically. Cargo installs `cppbro`; install
+CMake, Ninja, and a C++ compiler separately if you want build/run commands.
 
 For local development from this repository:
 
