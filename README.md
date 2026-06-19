@@ -38,62 +38,32 @@ MyProject/
 
 ## Installation
 
-For development or local use from this repository:
-
-```bash
-cargo install --path .
-```
-
-For a published release, use the platform-native option below.
-
-### macOS: Homebrew
-
-The intended macOS install path is a Homebrew tap:
+### macOS
 
 ```bash
 brew install Roozbeh-Sdtz/tap/cppbro
 ```
 
-Equivalently:
-
-```bash
-brew tap Roozbeh-Sdtz/tap
-brew install cppbro
-```
-
-Until the tap exists, install from this checkout with Cargo:
-
-```bash
-cargo install --path .
-```
-
-### Linux: Cargo
-
-For Rust command-line tools, Cargo is the most portable Linux install path
-across distributions:
+### Linux
 
 ```bash
 cargo install cppbro
 ```
 
-Before the crate is published to crates.io, install directly from Git:
+### Windows
+
+```powershell
+cargo install cppbro
+```
+
+`cppbro build` and `cppbro run` use CMake and Ninja. The Homebrew package
+installs those dependencies automatically; Linux and Windows users should have
+CMake, Ninja, and a C++ compiler installed for build/run commands.
+
+For local development from this repository:
 
 ```bash
-cargo install --git https://github.com/Roozbeh-Sdtz/cppbro
-```
-
-### Windows: winget
-
-The intended Windows package-manager install path is Windows Package Manager:
-
-```powershell
-winget install Roozbeh-Sdtz.cppbro
-```
-
-Before a winget package is published, install with Cargo:
-
-```powershell
-cargo install --git https://github.com/Roozbeh-Sdtz/cppbro
+cargo install --path .
 ```
 
 ## Quick Start
