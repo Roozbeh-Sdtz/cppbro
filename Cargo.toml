@@ -1,0 +1,19 @@
+[package]
+name = "cppbro"
+version = "0.1.0"
+edition = "2021"
+authors = ["Roozbeh Siyadatzadeh"]
+description = "A friendly C++ project generator for modern CMake, Ninja, clangd, build, run, and clean workflows."
+license = "MIT"
+repository = "https://github.com/Roozbeh-Sdtz/cppbro"
+homepage = "https://github.com/Roozbeh-Sdtz/cppbro"
+readme = "README.md"
+keywords = ["cpp", "cmake", "ninja", "clangd", "cli"]
+categories = ["command-line-utilities", "development-tools"]
+
+[dependencies]
+anyhow = "=1.0.86"
+clap = { version = "=4.5.23", features = ["derive"] }
+
+[dev-dependencies]
+tempfile = "=3.10.1"
