@@ -1,0 +1,22 @@
+# Public origin: git@github.com:Roozbeh-Sdtz/cppbro.git
+# Existing branch: main. Keep private data and credentials out of every commit.
+# Run from your cppbro checkout. Review intended paths before staging.
+
+git status --short --branch
+git diff
+
+# Stage these handoff documents after review; select exact paths for later changes.
+git add -- AGENTS.md CLAUDE.md knowledge/index.md knowledge/current-state.md githelp.txt
+git diff --cached --stat
+git diff --cached --check
+git diff --cached
+
+# After review, commit and push only when authorized.
+git commit -m "Document portable project development and handoff"
+git push origin main
+git rev-parse HEAD
+git ls-remote origin refs/heads/main
+
+# The local and remote SHAs should match. Never force-push to resolve divergence.
+# On another machine, inspect status and branch, then use git pull --ff-only
+# only when the checkout is clean and the upstream is correct.
